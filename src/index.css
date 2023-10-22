@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  @apply dark:bg-neutral dark:text-gray-100;
+}
+
+.btn-primary {
+  background-color: #220f80;
+  @apply px-5 py-2.5 dark:bg-[#72a5fc] dark:text-blue-950 font-semibold rounded-full text-lg hover:scale-95 transition-transform hover:opacity-95 text-white;
+}
+.btn-secondary {
+  color: #220f80;
+  @apply px-5 py-2.5 rounded-full text-lg hover:scale-95 transition-transform hover:opacity-95 bg-white font-bold;
+}
+
+#service {
+  background: linear-gradient(
+    84deg,
+    #9747ff -15.81%,
+    #7b61ff 18.79%,
+    #220f80 107.39%
+  );
+}
+
+.gredient-background {
+  background: linear-gradient(
+    264deg,
+    #9747ff 0%,
+    #7b61ff 41.15%,
+    #220f80 92.09%
+  );
+  color: #fff;
+}
+
+.gredient-background-dark {
+  background: linear-gradient(
+    264deg,
+    #6b2ebe 0%,
+    #573ea3 41.15%,
+    #1b0a4d 92.09%
+  );
+  color: #fff;
+}
+.no-scrollbar {
+}
+.no-scrollbar::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+.no-scrollbar::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.no-scrollbar::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}

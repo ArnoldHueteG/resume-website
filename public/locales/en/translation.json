@@ -1,0 +1,7 @@
+{
+    "languageList": ["Spanish", "English", "Portuguese"],
+    "dropdownButton": {
+      "text": "EN",
+      "icon": "chevronDown"
+    }
+  }
