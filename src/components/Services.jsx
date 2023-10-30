@@ -37,7 +37,8 @@ function Services() {
   // );
 
   return (
-    <section id='services' className='py-10'>
+    <div className='py-6' id='services'>
+    <section>
       <div className='max-w-6xl mx-auto'>
         <div className='flex flex-col items-center md:flex-row md:justify-between px-4'>
           <h2 className='text-3xl font-semibold mb-3 text-white'>
@@ -73,6 +74,7 @@ function Services() {
         </div>
       </div>
     </section>
+    </div>
   )
 }
 

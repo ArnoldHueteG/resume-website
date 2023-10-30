@@ -22,7 +22,7 @@ function RecentProjects() {
   })
   
   return (
-    <div className='dark:bg-darkSecondary py-24' id='projects'>
+    <div className='dark:bg-darkSecondary py-10 mt-0' id='projects'>
       <section className='px-3 max-w-6xl mx-auto'>
         <div className='text-center'>
           <h2 className='text-[35px] md:text-[42px] font-semibold'>

@@ -8,9 +8,6 @@
     "text": "ES"
   },
   "letsTalk": "¡Conversemos!",
-  "Services": "Servicios",
-  "Projects": "Proyectos",
-  "Skills": "Habilidades",
   "heroSection": {
     "hello": "¡Hola!",
     "title": "Soy Arnold,",
@@ -33,10 +30,12 @@
     }
   ],
   "ServiceSection": {
+    "menu": "Servicios",
     "title": "Mis Servicios",
     "subtitle": "Descubre cómo mis servicios pueden impulsar tu éxito en\nel mundo digital."
   },
   "SkillsSection": {
+    "menu": "Habilidades",
     "title": "Tecnologías Aplicadas",
     "subtitle": "Manejo y me actualizo en tecnologías de vanguardia \n para ofrecer el mejor servicio"
   },
@@ -44,7 +43,12 @@
     "question": "¿Quieres una asesoría?",
     "buttonText": "¡Conversemos!"
   },
+  "MarqueeTwo": {
+    "question": "¿Tienes alguna consulta?",
+    "buttonText": "¡Conversemos!"
+  },
   "RecentProjectsSection": {
+    "menu": "Proyectos",
     "title": "Proyectos Recientes",
     "subtitle": "Descubre mis últimos proyectos y cómo puedo ayudarte.",
     "buttonText": "¡Hablemos!",
@@ -62,5 +66,31 @@
         "description": "Este proyecto transformó significativamente el proceso de ingesta de datos para 15 bases de datos en la industria de seguros. Inicialmente, la configuración involucraba 6 instancias de DMS y varios jobs de Glue PySpark, incurriendo en costos sustanciales de $7.8k y $5k mensuales, respectivamente, y un tiempo de procesamiento superior a 4 horas.\n\nLa revisión introdujo un enfoque más eficiente con solo una instancia de Attunity y una instancia de Redshift. Este cambio redujo los costos mensuales a $2.5k para Attunity y $2k para Redshift. Impresionantemente, este cambio representó una reducción de costos de aproximadamente el 68%, junto con una disminución dramática en el tiempo de procesamiento a menos de una hora. Este movimiento estratégico no solo redujo los gastos, sino que también aceleró significativamente la eficiencia del procesamiento de datos, marcando un avance importante en las capacidades operativas de la compañía."
       }
     ]
+  },
+  "AboutMeSection": {
+    "menu": "Acerca de Mí",
+    "title": "Acerca de Mí",
+    "resume": {
+      "tabName": "Currículum",
+      "title": "¡Hola! Soy Arnold",
+      "description": "Comenzando como Analista de Negocios, rápidamente me encontré sumergiéndome en el desarrollo de software por mi cuenta. Este doble camino realmente me ayudó a entender cómo equilibrar las necesidades empresariales con soluciones tecnológicas. Con el tiempo, he cambiado suavemente a roles como Ingeniero de Datos y Arquitecto de Soluciones para Datos, donde tuve la oportunidad de jugar con el diseño de algunas soluciones de datos interesantes. Ahora, como Ingeniero de Backend, estoy completamente enfocado en fortalecer mis habilidades y apunto a completar mi conjunto de herramientas como Desarrollador Full-Stack.",
+      "button1Text": "¡Trabajemos juntos!",
+      "button2Text": "Descargar Currículum"
+    },
+    "certifications": {
+      "tabName": "Certificaciones"
+    },
+    "recognition": {
+      "tabName": "Reconocimientos",
+      "recognitionList": [
+        {
+          "title": "1er Lugar Hackathon Rimac 2022",
+          "description": "Ganador de la competencia junto con dos colegas, y reconocido como el mejor Ingeniero de Machine Learning del evento."
+        }
+      ]
+    }
+  },
+  "companiesSection": {
+    "title": "Experiencia profesional con destacadas empresas"
   }
 }

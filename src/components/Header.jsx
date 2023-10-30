@@ -31,6 +31,11 @@ const navList = [
     href: '#projects',
     icon: BsMap,
   },
+  {
+    name: 'About me',
+    href: '#aboutme',
+    icon: BsMap,
+  }
 ]
 
 function ToggleMode() {
@@ -87,7 +92,7 @@ function LanguageDropDown() {
                 className='dark:bg-neutral hover:text-[#5E47D2] dark:hover:text-[#ab9df0] flex gap-3 items-center'
                 onClick={() => changeLanguage(i)}
               >
-                <TfiWorld className='w-5 h-auto mr-2' />
+                {/* <TfiWorld className='w-5 h-auto mr-2' /> */}
                 {e}
               </button>
             )
@@ -131,6 +136,19 @@ function MobileLanguageDropDown() {
     </div>
   )
 }
+function scrollToElement(id) {
+  const element = document.getElementById(id)
+  const header = document.getElementsByTagName('header')
+  if (!element || !header) {
+    return
+  }
+  const headerHeight = header[0].offsetHeight
+  const offset = element.offsetTop - headerHeight
+  window.scrollTo({
+    top: offset,
+    behavior: 'smooth'
+  })
+}
 export default function Header() {
   const mobileMenu = useRef(null)
   const [darkMode, toggleDarkMode] = useDarkMode()
@@ -159,12 +177,18 @@ export default function Header() {
       href: '#projects',
       icon: BsMap,
     },
+    {
+      name: 'About me',
+      href: '#aboutme',
+      icon: BsMap,
+    }
+    
   ]);
   const letsTalk = t('letsTalk');
-  navList[0].name = t('Services');
-  navList[1].name = t('Skills');
-  navList[2].name = t('Projects');
-
+  navList[0].name = t('ServiceSection.menu');
+  navList[1].name = t('SkillsSection.menu');
+  navList[2].name = t('RecentProjectsSection.menu');
+  navList[3].name = t('AboutMeSection.menu');
   return (
     <>
       <div
@@ -238,7 +262,11 @@ export default function Header() {
             {navList.map((e) => {
               return (
                 <li key={e.name}>
-                  <a href={e.href}>{e.name}</a>
+                  <a href={e.href}
+                  onClick={(event) => {
+                    event.preventDefault()
+                    scrollToElement(e.href.slice(1))
+                  }}>{e.name}</a>
                 </li>
               )
             })}

@@ -20,8 +20,8 @@ function Technologies() {
   const { t, i18n } = useTranslation();
 
   return (
-    <div className='dark:bg-darkSecondary py-14' id='skills'>
-      <section className='px-3 max-w-6xl py-14 mx-auto'>
+    <div className='dark:bg-darkSecondary py-10' id='skills'>
+      <section className='px-3 max-w-6xl mx-auto'>
         <div className='text-center'>
           <h2 className='text-[35px] md:text-[42px] font-semibold'>
             {/* <span className='text-[#694DF9] dark:text-[#b5a7ff]'>
@@ -40,10 +40,10 @@ function Technologies() {
             {t(`SkillsSection.subtitle`)}
           </p>
         </div>
-        <div className='flex flex-wrap gap-8 md:gap-24 w-full justify-center'>
+        <div className='flex flex-wrap gap-8 md:gap-8 w-full justify-center'>
           {technologies.map((tech) => (
             <div key={tech.name} className="flex flex-col items-center">
-              <img src={ "/src/" +tech.icon} alt={tech.name} title={tech.description} className="h-32 object-contain"/>
+              <img src={ "/src/" +tech.icon} alt={tech.name} title={tech.description} className="h-24 object-contain"/>
               <p className='text-center font-semibold mt-2'>{tech.name}</p>
             </div>
           ))}

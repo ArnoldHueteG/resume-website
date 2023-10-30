@@ -8,14 +8,89 @@
     "text": "PT"
   },
   "letsTalk": "Vamos conversar!",
-  "Services": "Serviços",
-  "Projects": "Projetos",
-  "Skills": "Habilidades",
   "heroSection": {
-    "hello": "Hola",
-    "title": "Soy Arnold,",
-    "subtitle": "Software Engineer",
-    "description": "Cuento con experiencia en la optimización de soluciones en la nube, construyendo desde el Análisis de Negocios hasta soluciones digitales integrales entre datos y backend. Diseño soluciones sólidas que potencian la eficiencia y la innovación.",
-    "button": "Conversemos"
+    "hello": "Olá!",
+    "title": "Sou Arnold,",
+    "subtitle": "Engenheiro de Software",
+    "description": "Tenho experiência na otimização de soluções em nuvem, construindo desde a Análise de Negócios até soluções digitais integradas entre dados e backend. Desenho soluções sólidas que potencializam a eficiência e a inovação.",
+    "button": "Vamos conversar!"
+  },
+  "ServiceList": [
+    {
+      "title": "Soluções de Dados",
+      "description": "Crie uma plataforma de dados integral adaptada às necessidades da sua empresa, que permite tomar decisões informadas e baseadas em dados."
+    },
+    {
+      "title": "Migração para a nuvem",
+      "description": "Realize uma transição suave da sua infraestrutura para a nuvem com nossos serviços dedicados de migração, desenhados para sua comodidade e segurança."
+    },
+    {
+      "title": "Desenvolvimento de Produtos Digitais",
+      "description": "Transforme seus conceitos em produtos digitais de sucesso com nossos serviços de desenvolvimento de ponta, garantindo que sua inovação se destaque."
+    }
+  ],
+  "ServiceSection": {
+    "menu": "Serviços",
+    "title": "Meus Serviços",
+    "subtitle": "Descubra como meus serviços podem impulsionar seu sucesso no\nmundo digital."
+  },
+  "SkillsSection": {
+    "menu": "Habilidades",
+    "title": "Tecnologias Aplicadas",
+    "subtitle": "Manejo e me atualizo em tecnologias de ponta\npara oferecer o melhor serviço"
+  },
+  "MarqueeOne": {
+    "question": "Quer uma consultoria?",
+    "buttonText": "Vamos conversar!"
+  },
+  "MarqueeTwo": {
+    "question": "Você tem alguma dúvida?",
+    "buttonText": "Vamos conversar!"
+  },
+  "RecentProjectsSection": {
+    "menu": "Projetos",
+    "title": "Projetos Recentes",
+    "subtitle": "Descubra meus últimos projetos e como posso ajudá-lo.",
+    "buttonText": "Vamos falar!",
+    "projectList": [
+      {
+        "title": "Desenvolvimento de uma Plataforma de Dados Integrada para uma Cadeia de Restaurantes Utilizando Múltiplas Ferramentas SaaS",
+        "description": "Este projeto focou em criar uma plataforma de dados avançada e integrada para uma conhecida cadeia de restaurantes, aproveitando um conjunto de plataformas SaaS. Cada plataforma fornecia fluxos de dados únicos, que iam desde contabilidade e inventário (R365), operações de ponto de venda (Toast), gestão de RH e folha de pagamento (Paycom), até planejamento da força de trabalho (Harri), feedback de clientes (Tattle) e engajamento online (Yext).\n\nO desafio estava em amalgamar dados dessas fontes variadas em um sistema coeso e acessível, superando as limitações dos silos de dados isolados. A plataforma resultante transformou a abordagem do restaurante em relação aos dados, permitindo uma tomada de decisões integral baseada em dados em todos os aspectos das operações. Esta integração estratégica permitiu uma maior eficiência operacional, melhorou a satisfação do cliente e fomentou o crescimento em um mercado competitivo."
+      },
+      {
+        "title": "Melhoria da Integridade de Dados para 200 Milhões de Usuários de um Serviço de Streaming através da API de Braze",
+        "description": "Este projeto focou na tarefa crítica de elevar a qualidade dos dados para um serviço de streaming com uma enorme base de usuários de 200 milhões. O foco principal estava em identificar e eliminar registros duplicados, refinando assim a qualidade geral dos dados.\n\nUtilizando a API de Braze, empregamos Dataflow para extensas transformações de dados, Snowflake para armazenamento seguro e Looker para visualização perspicaz. Esta abordagem estratégica melhorou significativamente a precisão dos dados e a eficiência do processamento, assegurando insights mais confiáveis para nossa vasta e diversa base de usuários."
+      },
+      {
+        "title": "Revolucionando a Ingestão de Dados em uma Companhia de Seguros: Mais Rápido, Mais Barato, Melhor",
+        "description": "Este projeto transformou significativamente o processo de ingestão de dados para 15 bases de dados na indústria de seguros. Inicialmente, a configuração envolvia 6 instâncias de DMS e vários jobs de Glue PySpark, incorrendo em custos substanciais de $7.8k e $5k mensais, respectivamente, e um tempo de processamento superior a 4 horas.\n\nA revisão introduziu uma abordagem mais eficiente com apenas uma instância de Attunity e uma instância de Redshift. Esta mudança reduziu os custos mensais para $2.5k para Attunity e $2k para Redshift. Impressionantemente, esta mudança representou uma redução de custos de aproximadamente 68%, junto com uma diminuição dramática no tempo de processamento para menos de uma hora. Este movimento estratégico não só reduziu as despesas, mas também acelerou significativamente a eficiência do processamento de dados, marcando um avanço importante nas capacidades operacionais da companhia."
+      }
+    ]
+  },
+  "AboutMeSection": {
+    "menu": "Sobre Mim",
+    "title": "Sobre Mim",
+    "resume": {
+      "tabName": "Currículo",
+      "title": "Olá! Sou Arnold",
+      "description": "Começando como Analista de Negócios, rapidamente me vi mergulhando no desenvolvimento de software por conta própria. Esse caminho duplo realmente me ajudou a entender como equilibrar as necessidades empresariais com soluções tecnológicas. Com o tempo, mudei suavemente para papéis como Engenheiro de Dados e Arquiteto de Soluções para Dados, onde tive a oportunidade de brincar com o design de algumas soluções de dados interessantes. Agora, como Engenheiro de Backend, estou totalmente focado em fortalecer minhas habilidades e viso completar meu conjunto de ferramentas como Desenvolvedor Full-Stack.",
+      "button1Text": "Vamos trabalhar juntos!",
+      "button2Text": "Baixar Currículo"
+    },
+    "certifications": {
+      "tabName": "Certificações"
+    },
+    "recognition": {
+      "tabName": "Reconhecimentos",
+      "recognitionList": [
+        {
+          "title": "1º Lugar Hackathon Rimac 2022",
+          "description": "Vencedor da competição junto com dois colegas, e reconhecido como o melhor Engenheiro de Machine Learning do evento."
+        }
+      ]
+    }
+  },
+  "companiesSection": {
+    "title": "Experiência profissional com empresas destacadas"
   }
 }

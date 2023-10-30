@@ -8,9 +8,6 @@
     "text": "EN"
   },
   "letsTalk": "Let's talk!",
-  "Services": "Services",
-  "Projects": "Projects",
-  "Skills": "Skills",
   "heroSection": {
     "hello": "Hello!",
     "title": "I'm Arnold,",
@@ -33,10 +30,12 @@
     }
   ],
   "ServiceSection": {
+    "menu": "Services",
     "title": "My Services",
     "subtitle": "Discover how my services can boost your success in \n the digital world."
   },
   "SkillsSection": {
+    "menu": "Skills",
     "title": "Applied Skills",
     "subtitle": "I handle and keep myself updated with cutting-edge technologies \n to provide the best service."
   },
@@ -44,7 +43,12 @@
     "question": "Looking for a consultation?",
     "buttonText": "Let's talk!"
   },
+  "MarqueeTwo": {
+    "question": "Do you have any questions?",
+    "buttonText": "Let's talk!"
+  },
   "RecentProjectsSection": {
+    "menu": "Projects",
     "title": "Recent Projects",
     "subtitle": "Discover my latest projects and how I can help you.",
     "buttonText": "Let's talk!",
@@ -62,5 +66,31 @@
         "description": "This project significantly transformed the data ingestion process for 15 databases in the insurance industry. Initially, the setup involved 6 DMS instances and several Glue PySpark jobs, incurring substantial costs of $7.8k and $5k monthly, respectively, and a processing time exceeding 4 hours.\n\nThe overhaul introduced a streamlined approach with just one Attunity instance and a single Redshift instance. This shift brought the monthly costs down to $2.5k for Attunity and $2k for Redshift. Impressively, this change represented a cost reduction of approximately 68%, alongside a dramatic decrease in processing time to less than an hour. This strategic move not only slashed expenses but also significantly accelerated the data processing efficiency, marking a major advancement in the company's operational capabilities."
       }
     ]
+  },
+  "AboutMeSection": {
+    "menu": "About Me",
+    "title": "About Me",
+    "resume": {
+      "tabName": "Resume",
+      "title": "Hello! I'm Arnold",
+      "description": "Starting out as a Business Analyst, I quickly found myself diving into software development on the side. This dual path really helped me get the hang of balancing business needs with tech solutions. Over time, I've smoothly shifted gears into roles like Data Engineer and Solutions Architect for Data, where I got to play around with designing some cool data solutions. Now, as a Backend Engineer, I'm all in on beefing up my skills and aiming to round out my toolkit as a Full-Stack Developer.",
+      "button1Text": "Let's work together!",
+      "button2Text": "Download Resume"
+    },
+    "certifications": {
+      "tabName": "Certifications"
+    },
+    "recognition": {
+      "tabName": "Recognition",
+      "recognitionList": [
+        {
+          "title": "1st Place Hackathon Rimac 2022",
+          "description": "Winner of the competition along with two colleagues, and recognized as the best Machine Learning Engineer of the event."
+        }
+      ]
+    }
+  },
+  "companiesSection": {
+    "title": "Professional experience with prominent companies"
   }
 }
