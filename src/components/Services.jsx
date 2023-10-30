@@ -1,39 +1,54 @@
-import ServiceOne from './../assets/service-1.png'
+import ServiceOne from './../assets/images.jpeg'
 import ServiceTwo from './../assets/service-2.png'
 import ServiceThree from './../assets/service-3.png'
+import { useState } from 'react'
+import { useTranslation } from 'react-i18next';
 
 function Services() {
-  const serviceList = [
+  const [serviceList, setserviceList] = useState([
     {
-      title: 'Asesoría tecnológica',
+      title: 'Data Solutions',
       img: ServiceTwo,
-      text: 'Transforma tu negocio con asesoría digital experta en datos, desarrollo y más y alcanza el éxito en línea.',
+      text: 'Build a comprehensive data platform tailored to your company\'s needs, empowering you to make informed, data-driven decisions.',
     },
     {
-      title: 'Desarrollo de productos',
-      img: ServiceThree,
-      text: 'Convierte tus ideas en productos digitales exitosos con el servicio de desarrollo de vanguardia que tenemos para ti.',
-    },
-    {
-      title: 'Coaching a equipos',
+      title: 'Cloud Migration',
       img: ServiceOne,
-      text: 'Optimiza el rendimiento de tu equipo con nuestro poderoso servicio de coaching, en donde optimizaremos el proceso de trabajo.',
+      text: 'Seamlessly transition your infrastructure to the cloud with our dedicated migration services, designed for your convenience and security.',
+    },
+    {
+      title: 'Digital Product Development',
+      img: ServiceThree,
+      text: 'Transform your concepts into successful digital products with our cutting-edge development services, ensuring your innovation stands out.',
     },
   ]
+  )
+  const { t, i18n } = useTranslation();
+  for (let i = 0; i < serviceList.length; i++) {
+    const service = serviceList[i];
+    service.title = t(`ServiceList.${i}.title`);
+    service.text = t(`ServiceList.${i}.description`);
+  }
+  // setserviceList( serviceList.map((service, index) => ({
+  //   ...service,
+  //   title: t(`Services.${index}.title`),
+  //   text: t(`Services.${index}.text`),
+  // }))
+  // );
+
   return (
-    <section id='service' className='py-24'>
+    <section id='services' className='py-10'>
       <div className='max-w-6xl mx-auto'>
         <div className='flex flex-col items-center md:flex-row md:justify-between px-4'>
           <h2 className='text-3xl font-semibold mb-3 text-white'>
-            Mis servicios
+            {t(`ServiceSection.title`)}
           </h2>
           <div className='max-w-md w-full text-center md:text-right text-[#F7F5FF]'>
-            Descubre cómo mis servicios pueden impulsar tu éxito en el mundo
-            digital.
+            {t(`ServiceSection.subtitle`)}
           </div>
         </div>
         <div className='overflow-auto no-scrollbar text-[#F7F5FF]'>
-          <div className='flex py-10 gap-4 pl-3'>
+          <div className='flex pt-10 gap-4 pl-3'>
             {serviceList.map((service, i) => {
               return (
                 <div
@@ -43,7 +58,7 @@ function Services() {
                   <img
                     src={service.img}
                     alt=''
-                    className='w-full h-auto mt-1 mb-3'
+                    className='w-full h-36 mt-1 mb-3 rounded-lg'
                   />
                   <h2 className='text-xl md:text-2xl font-bold my-4 dark:text-gray-300'>
                     {service.title}

@@ -17,7 +17,7 @@ body {
   @apply px-5 py-2.5 rounded-full text-lg hover:scale-95 transition-transform hover:opacity-95 bg-white font-bold;
 }
 
-#service {
+#services {
   background: linear-gradient(
     84deg,
     #9747ff -15.81%,

@@ -1,7 +1,62 @@
 {
     "languageList": ["Español", "Inglés", "Portugues"],
     "dropdownButton": {
-      "text": "ES",
-      "icon": "chevronDown"
-    }
+      "text": "ES"
+    },
+    "letsTalk": "¡Conversemos!",
+    "Services": "Servicios",
+    "Projects": "Proyectos",
+    "Skills": "Habilidades",
+    "heroSection": {
+      "hello": "¡Hola!",
+      "title": "Soy Arnold,",
+      "subtitle": "Software Engineer",
+      "description": "Cuento con experiencia en la optimización de soluciones en la nube, construyendo desde el Análisis de Negocios hasta soluciones digitales integrales entre datos y backend. Diseño soluciones sólidas que potencian la eficiencia y la innovación.",
+      "button": "¡Conversemos!"
+    },
+    "ServiceList": [
+      {
+        "title": "Soluciones de Datos",
+        "description": "Cree una plataforma de datos integral adaptada a las necesidades de su empresa, que le permita tomar decisiones informadas y basadas en datos."
+      },
+      {
+        "title": "Migración a la nube",
+        "description": "Realice una transición fluida de su infraestructura a la nube con nuestros servicios de migración dedicados, diseñados para su comodidad y seguridad."
+      },
+      {
+        "title": "Desarrollo de Productos Digitales",
+        "description": "Transforme sus conceptos en productos digitales exitosos con nuestros servicios de desarrollo de vanguardia, garantizando que su innovación se destaque."
+      }
+    ],
+    "ServiceSection": {
+      "title": "Mis Servicios",
+      "subtitle" : "Descubre cómo mis servicios pueden impulsar tu éxito en\nel mundo digital."
+    },
+    "SkillsSection": {
+      "title": "Tecnologías Aplicadas",
+      "subtitle" : "Manejo y me actualizo en tecnologías de vanguardia \n para ofrecer el mejor servicio"
+    },
+    "MarqueeOne" : {
+      "question" : "¿Quieres una asesoría?",
+      "buttonText" : "¡Conversemos!"
+    },
+    "RecentProjectsSection" : {
+      "title" : "Proyectos Recientes",
+      "subtitle" : "Descubre mis últimos proyectos y cómo puedo ayudarte.",
+      "buttonText" : "¡Hablemos!",
+      "projectList" : [
+      {
+      "title" : "Desarrollo de una Plataforma de Datos Integrada para una Cadena de Restaurantes Utilizando Múltiples Herramientas SaaS",
+      "description" : "Este proyecto se centró en crear una plataforma de datos avanzada e integrada para una conocida cadena de restaurantes, aprovechando un conjunto de plataformas SaaS. Cada plataforma proporcionaba flujos de datos únicos, que iban desde contabilidad e inventario (R365), operaciones de punto de venta (Toast), gestión de RRHH y nóminas (Paycom), hasta planificación de la fuerza laboral (Harri), retroalimentación de clientes (Tattle) y compromiso en línea (Yext).\n\nEl desafío radicaba en amalgamar datos de estas fuentes variadas en un sistema cohesivo y accesible, superando las limitaciones de los silos de datos aislados. La plataforma resultante transformó el enfoque del restaurante hacia los datos, permitiendo una toma de decisiones integral basada en datos en todos los aspectos de las operaciones. Esta integración estratégica permitió una mayor eficiencia operativa, mejoró la satisfacción del cliente y fomentó el crecimiento en un mercado competitivo."
+      },
+      {
+      "title" : "Mejora de la Integridad de Datos para 200 Millones de Usuarios de un Servicio de Streaming a través de la API de Braze",
+      "description" : "Este proyecto se enfocó en la tarea crítica de elevar la calidad de los datos para un servicio de streaming con una enorme base de usuarios de 200 millones. El enfoque principal estaba en identificar y eliminar registros duplicados, refinando así la calidad general de los datos.\n\nUtilizando la API de Braze, empleamos Dataflow para extensas transformaciones de datos, Snowflake para almacenamiento seguro y Looker para visualización perspicaz. Este enfoque estratégico mejoró significativamente la precisión de los datos y la eficiencia del procesamiento, asegurando insights más confiables para nuestra vasta y diversa base de usuarios."
+      },
+      {
+      "title" : "Revolucionando la Ingesta de Datos en una Compañía de Seguros: Más Rápido, Más Barato, Mejor",
+      "description" : "Este proyecto transformó significativamente el proceso de ingesta de datos para 15 bases de datos en la industria de seguros. Inicialmente, la configuración involucraba 6 instancias de DMS y varios jobs de Glue PySpark, incurriendo en costos sustanciales de $7.8k y $5k mensuales, respectivamente, y un tiempo de procesamiento superior a 4 horas.\n\nLa revisión introdujo un enfoque más eficiente con solo una instancia de Attunity y una instancia de Redshift. Este cambio redujo los costos mensuales a $2.5k para Attunity y $2k para Redshift. Impresionantemente, este cambio representó una reducción de costos de aproximadamente el 68%, junto con una disminución dramática en el tiempo de procesamiento a menos de una hora. Este movimiento estratégico no solo redujo los gastos, sino que también aceleró significativamente la eficiencia del procesamiento de datos, marcando un avance importante en las capacidades operativas de la compañía."
+      }
+      ]
+      }
   }

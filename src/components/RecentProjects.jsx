@@ -1,10 +1,15 @@
 import { useState } from 'react'
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai'
 import { useSpring, animated } from 'react-spring'
-import { projects as projectList } from '../data/projects'
+import { projects as projectImages } from '../data/projects'
+import { useTranslation } from 'react-i18next';
+import { v4 as uuidv4 } from 'uuid';
 
 function RecentProjects() {
   const [currentTab, setCurrentTab] = useState(0)
+  const { t, i18n } = useTranslation();
+  const projectList = t('RecentProjectsSection.projectList', { returnObjects: true });
+
   const isNextSlideExist = currentTab < projectList.length - 1
   const isPrevSlideExist = currentTab > 0
 
@@ -15,37 +20,45 @@ function RecentProjects() {
     reset: true,
     onRest: () => {}, // No automatic transition, onRest is empty
   })
-
+  
   return (
-    <div className='dark:bg-darkSecondary py-24' id='proyectos'>
+    <div className='dark:bg-darkSecondary py-24' id='projects'>
       <section className='px-3 max-w-6xl mx-auto'>
         <div className='text-center'>
           <h2 className='text-[35px] md:text-[42px] font-semibold'>
-            <span className='text-[#694DF9] dark:text-[#b5a7ff]'>
+            {/* <span className='text-[#694DF9] dark:text-[#b5a7ff]'>
               Proyectos
             </span>{' '}
-            Recientes
+            Recientes */}
+            {t('RecentProjectsSection.title')
+              .split(' ')
+              .map((word, index) => (
+                index === 0
+                  ? <span key={uuidv4()} className="text-[#694DF9] dark:text-[#b5a7ff]">{word}</span>
+                  : <span key={uuidv4()}>{' ' + word}</span>
+              ))
+            }
           </h2>
           <p className='text-base max-w-sm w-full mx-auto mt-2 mb-8 text-[#0A0A0A] dark:text-gray-300'>
-            Consulte las implementaciones recientes y los diseños de alto nivel
+            {t(`RecentProjectsSection.subtitle`)}
           </p>
         </div>
         <animated.div style={props}>
-          <div className='grid gap-2 grid-cols-1 md:grid-cols-2'>
+          <div className='grid gap-6 grid-cols-1 md:grid-cols-2'>
             <div>
-              <img src={projectList[currentTab].imageUrl} alt='' />
+              <img src={projectImages[currentTab].imageUrl} alt='' className='rounded-xl' />
             </div>
             <div className='space-y-4'>
               <h2 className='text-[27px] md:text-[32px] font-semibold'>
                 {projectList[currentTab].title}
               </h2>
-              <p className='dark:text-gray-400'>
+              <p className='dark:text-gray-400' style={{ whiteSpace: 'pre-wrap' }}>
                 {projectList[currentTab].description}
               </p>
-              <p className='text-xl text-[#757575] dark:text-gray-300'>
+              {/* <p className='text-xl text-[#757575] dark:text-gray-300'>
                 Cliente: {projectList[currentTab].client}
-              </p>
-              <button className='btn-primary'>¡Conversemos!</button>
+              </p> */}
+              <button className='btn-primary'>{t(`RecentProjectsSection.buttonText`)}</button>
             </div>
           </div>
         </animated.div>

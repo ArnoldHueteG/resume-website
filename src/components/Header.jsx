@@ -13,19 +13,22 @@ import {
 import { TfiWorld } from 'react-icons/tfi'
 import useDarkMode from '../hooks/useDarkMode'
 import { useState } from 'react'
-
-const languageList = ['Español', 'Inglés', 'Portugues']
+import { useTranslation } from 'react-i18next';
 
 const navList = [
-  { name: 'Service', href: '#service', icon: AiOutlineStar },
+  { 
+    name: 'Services', 
+    href: '#services', 
+    icon: AiOutlineStar 
+  },
   {
-    name: 'Technologies',
-    href: '#technologies',
+    name: 'Skills',
+    href: '#skills',
     icon: FiServer,
   },
   {
-    name: 'Proyectos',
-    href: '#proyectos',
+    name: 'Projects',
+    href: '#projects',
     icon: BsMap,
   },
 ]
@@ -46,6 +49,25 @@ function ToggleMode() {
 }
 
 function LanguageDropDown() {
+  const { t, i18n } = useTranslation();
+  const languageList2 = t('languageList', { returnObjects: true });
+  const dropdownButton = t('dropdownButton', { returnObjects: true });
+
+  const changeLanguage = (i) => {
+    console.log(dropdownButton.text);
+    if (i === 0) {
+      i18n.changeLanguage('es');
+    }
+    if (i === 1) {
+      i18n.changeLanguage('en');
+    }
+    if (i === 2) {
+      i18n.changeLanguage('pt');
+    }
+    // i18n.changeLanguage(lng);
+  };
+
+
   return (
     <div className='relative inline-block text-left group'>
       <button
@@ -53,16 +75,17 @@ function LanguageDropDown() {
         className='inline-flex items-center justify-center w-full px-4 py-2 text-sm font-medium'
       >
         <TfiWorld className='w-5 h-auto mr-2' />
-        Esp <BsChevronDown className='w-4 h-auto ml-3' />
+        {dropdownButton.text} <BsChevronDown className={`w-4 h-auto ml-3 chevronDown`} />
       </button>
 
       <div className='absolute right-0 -top-28 mt-0 py-4 -z-20 group-hover:z-50 group-hover:top-8'>
         <div className='space-y-2 bg-white border dark:bg-neutral border-gray-200 dark:border-gray-600 rounded-xl opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto w-[180px] dark:text-gray-300 flex gap-y-1 p-4 flex-col'>
-          {languageList.map((e, i) => {
+          {languageList2.map((e, i) => {
             return (
               <button
                 key={i}
                 className='dark:bg-neutral hover:text-[#5E47D2] dark:hover:text-[#ab9df0] flex gap-3 items-center'
+                onClick={() => changeLanguage(i)}
               >
                 <TfiWorld className='w-5 h-auto mr-2' />
                 {e}
@@ -74,6 +97,8 @@ function LanguageDropDown() {
     </div>
   )
 }
+
+const languageList = ['Español', 'Inglés', 'Portugues']
 
 function MobileLanguageDropDown() {
   const [currentDropDown, setCurrentDropdown] = useState(languageList[0])
@@ -116,6 +141,30 @@ export default function Header() {
   const closeMenu = () => {
     mobileMenu.current.style.height = '0%'
   }
+
+  const { t, i18n } = useTranslation();
+  const [navList, setNavList] = useState([
+    {
+      name: 'Services',
+      href: '#services',
+      icon: AiOutlineStar,
+    },
+    {
+      name: 'Skills',
+      href: '#skills',
+      icon: FiServer,
+    },
+    {
+      name: 'Projects',
+      href: '#projects',
+      icon: BsMap,
+    },
+  ]);
+  const letsTalk = t('letsTalk');
+  navList[0].name = t('Services');
+  navList[1].name = t('Skills');
+  navList[2].name = t('Projects');
+
   return (
     <>
       <div
@@ -147,7 +196,7 @@ export default function Header() {
           })}
         </div>
         <div className='mt-10 px-6'>
-          <p className='border-b-2 inline-flex items-center justify-between gap-2 border-gray-300 px-4 py-4 w-full'>
+          <div className='border-b-2 inline-flex items-center justify-between gap-2 border-gray-300 px-4 py-4 w-full'>
             Oscuro
             <div className='flex items-center'>
               <input
@@ -162,18 +211,17 @@ export default function Header() {
                 className='cursor-pointer flex items-center justify-between w-14 py-0.5 px-1 rounded-full bg-[#212020] dark:bg-white transition-transform duration-300 ease-in-out'
               >
                 <div
-                  className={`w-6 h-6 flex justify-center items-center rounded-full shadow-md transform ${
-                    darkMode
-                      ? 'translate-x-full bg-[#212020]'
-                      : 'translate-x-0 bg-white'
-                  }`}
+                  className={`w-6 h-6 flex justify-center items-center rounded-full shadow-md transform ${darkMode
+                    ? 'translate-x-full bg-[#212020]'
+                    : 'translate-x-0 bg-white'
+                    }`}
                 >
                   {darkMode && <BsFillSunFill />}
                   {!darkMode && <BsFillMoonStarsFill />}
                 </div>
               </label>
             </div>
-          </p>
+          </div>
           <MobileLanguageDropDown />
         </div>
       </div>
@@ -186,7 +234,7 @@ export default function Header() {
           </a>
         </div>
         <nav className='md:block hidden'>
-          <ul className='flex gap-2 font-semibold'>
+          <ul className='flex gap-10 font-semibold'>
             {navList.map((e) => {
               return (
                 <li key={e.name}>
@@ -200,7 +248,7 @@ export default function Header() {
           <ToggleMode />
           <LanguageDropDown />
           <button className='border-2 px-4 py-2.5 rounded-full font-bold border-[#220F80] text-[#220F80] dark:border-gray-200 dark:text-gray-200 hover:scale-95'>
-            Conversemos
+            {letsTalk}
           </button>
         </div>
         <div className='block md:hidden'>
