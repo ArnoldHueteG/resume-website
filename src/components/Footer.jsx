@@ -93,13 +93,13 @@ function Footer() {
             <div className='flex gap-7 my-3 justify-center md:justify-start w-full'>
               <div className='flex gap-2 text-[#FFF] items-center text-lg'>
                 <AiFillGithub />
-                <a href='https://github.com/ArnoldHueteG' className='hover:underline'>
+                <a href='https://github.com/ArnoldHueteG' target='_blank' className='hover:underline'>
                   Github
                 </a>
               </div>
               <div className='flex gap-2 text-[#FFF] items-center text-lg'>
                 <AiFillLinkedin />
-                <a href='https://www.linkedin.com/in/arnoldhuete/' className='hover:underline'>
+                <a href='https://www.linkedin.com/in/arnoldhuete/' target='_blank' className='hover:underline'>
                   Linkedin
                 </a>
               </div>

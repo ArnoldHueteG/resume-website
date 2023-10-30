@@ -58,7 +58,9 @@ function RecentProjects() {
               {/* <p className='text-xl text-[#757575] dark:text-gray-300'>
                 Cliente: {projectList[currentTab].client}
               </p> */}
-              <button className='btn-primary'>{t(`RecentProjectsSection.buttonText`)}</button>
+              <button className='btn-primary'
+              onClick={() => window.open('https://api.whatsapp.com/send/?phone=51942603349', '_blank')}
+              >{t(`RecentProjectsSection.buttonText`)}</button>
             </div>
           </div>
         </animated.div>

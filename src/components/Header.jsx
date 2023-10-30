@@ -279,7 +279,10 @@ export default function Header() {
         <div className='gap-3 items-center md:flex hidden'>
           <ToggleMode />
           <LanguageDropDown />
-          <button className='border-2 px-4 py-2.5 rounded-full font-bold border-[#220F80] text-[#220F80] dark:border-gray-200 dark:text-gray-200 hover:scale-95'>
+          <button 
+            className='border-2 px-4 py-2.5 rounded-full font-bold border-[#220F80] text-[#220F80] dark:border-gray-200 dark:text-gray-200 hover:scale-95'
+            onClick={() => window.open('https://api.whatsapp.com/send/?phone=51942603349', '_blank')}
+          >
             {letsTalk}
           </button>
         </div>

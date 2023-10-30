@@ -26,10 +26,13 @@ function Resume() {
           {t('AboutMeSection.resume.description')}
         </p>
         <div className='flex flex-col md:flex-row gap-3 pt-8'>
-          <button className='btn-primary w-full md:w-auto'>
+          <button className='btn-primary w-full md:w-auto'
+          onClick={() => window.open('https://api.whatsapp.com/send/?phone=51942603349', '_blank')}>
             {t('AboutMeSection.resume.button1Text')}
           </button>
-          <button className='btn-secondary w-full md:w-auto hover:bg-slate-200'>
+          <button className='btn-secondary w-full md:w-auto hover:bg-slate-200'
+          onClick={() => window.open('/assets/docs/Arnold-Huete-ENG-2023-Jul-SE.pdf', '_blank')}
+          >
           {t('AboutMeSection.resume.button2Text')}
           </button>
         </div>

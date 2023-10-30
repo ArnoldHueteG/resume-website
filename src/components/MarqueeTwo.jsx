@@ -13,7 +13,9 @@ function MarqueeOne() {
               <p className='text-2xl md:text-4xl font-semibold'>
                 {t('MarqueeTwo.question')}
               </p>
-              <button className='bg-white text-[#220F80] font-bold px-4 py-4 text-lg rounded-full'>
+              <button className='bg-white text-[#220F80] font-bold px-4 py-4 text-lg rounded-full'
+              onClick={() => window.open('https://api.whatsapp.com/send/?phone=51942603349', '_blank')}
+              >
                 {t('MarqueeTwo.buttonText')}
               </button>
             </div>

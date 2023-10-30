@@ -26,7 +26,9 @@ function Hero() {
           <p className='text-[#424242] dark:text-gray-300 mt-5'>
           {t("heroSection.description")}
           </p>
-          <button className='btn-primary mt-6 mb-3 md:w-auto w-full'>
+          <button className='btn-primary mt-6 mb-3 md:w-auto w-full'
+          onClick={() => window.open('https://api.whatsapp.com/send/?phone=51942603349', '_blank')}
+          >
           {t("heroSection.button")}
           </button>
           <div className='flex gap-7 my-3 justify-center md:justify-start w-full'>
