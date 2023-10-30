@@ -1,16 +1,24 @@
 import Marquee from 'react-fast-marquee'
-import logo1 from './../assets/company/logo1.png'
-import logo2 from './../assets/company/logo2.png'
-import logo3 from './../assets/company/logo3.png'
-import logo4 from './../assets/company/logo4.png'
-import logo5 from './../assets/company/logo5.png'
-import logo6 from './../assets/company/logo6.png'
-import logo7 from './../assets/company/logo7.png'
+// import logo1 from 'assets/company/logo1.png'
+// import logo2 from 'assets/company/logo2.png'
+// import logo3 from 'assets/company/logo3.png'
+// import logo4 from 'assets/company/logo4.png'
+// import logo5 from 'assets/company/logo5.png'
+// import logo6 from 'assets/company/logo6.png'
+// import logo7 from 'assets/company/logo7.png'
 import { useTranslation } from 'react-i18next'
 import { v4 as uuidv4 } from 'uuid'
 
 function Companies() {
   const { t, i18n } = useTranslation()
+  const logo1 = '/assets/company/logo1.png'
+  const logo2 = '/assets/company/logo2.png'
+  const logo3 = '/assets/company/logo3.png'
+  const logo4 = '/assets/company/logo4.png'
+  const logo5 = '/assets/company/logo5.png'
+  const logo6 = '/assets/company/logo6.png'
+  const logo7 = '/assets/company/logo7.png'
+
   return (
     <div className='dark:bg-darkSecondary'>
       <div className='max-w-6xl mx-auto px-4 py-14'>

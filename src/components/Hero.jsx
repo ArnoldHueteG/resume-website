@@ -1,12 +1,13 @@
-import XlHero from '../assets/XlHero.png'
-import MobileHero from '../assets/MobileHero.png'
+// import XlHero from '../assets/XlHero.png'
+// import MobileHero from '../assets/MobileHero.png'
 import { AiFillGithub } from 'react-icons/ai'
 import { AiFillLinkedin } from 'react-icons/ai'
 import { useTranslation } from 'react-i18next';
 
 function Hero() {
   const { t, i18n } = useTranslation();
-
+  const XlHero = '/assets/XlHero.png'
+  const MobileHero = '/assets/MobileHero.png'
   return (
     <section
       id='hero'

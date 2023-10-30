@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import Arnold from '../assets/arnold.png'
-import MobileHero from '../assets/MobileHero.png'
+// import Arnold from './assets/arnold.png'
+// import MobileHero from './assets/MobileHero.png'
 import { certification } from './../data/certification'
 import { recognition } from './../data/recognition'
 import { useTranslation } from 'react-i18next';
@@ -106,6 +106,8 @@ function Recognition() {
 export default function AboutMe() {
   const [currentTab, setCurrentTab] = useState(0)
   const { t, i18n } = useTranslation();
+  const Arnold = '/assets/arnold.png'
+  const MobileHero = '/assets/MobileHero.png'
   return (
     <section className='grid grid-cols-1 md:grid-cols-2 mx-auto px-4 max-w-7xl pt-10 gap-3' id="aboutme">
       <div className='h-full'>

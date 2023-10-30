@@ -1,4 +1,4 @@
-const imageRoot = '/src/assets/'
+const imageRoot = '/assets/'
 
 export const projects = [
   {

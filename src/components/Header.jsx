@@ -1,7 +1,7 @@
 import { useRef } from 'react'
-import Logo from '../assets/Logo.png'
-import DarkLogo from '../assets/logoDark.png'
-import MiniLogo from '../assets/MiniLogo.png'
+// import Logo from '../assets/Logo.png'
+// import DarkLogo from '../assets/logoDark.png'
+// import MiniLogo from '../assets/MiniLogo.png'
 import { AiOutlineMenu, AiOutlineClose, AiOutlineStar } from 'react-icons/ai'
 import { FiServer } from 'react-icons/fi'
 import {
@@ -150,6 +150,10 @@ function scrollToElement(id) {
   })
 }
 export default function Header() {
+  const MiniLogo = '/assets/MiniLogo.png'
+  const Logo = '/assets/Logo.png'
+  const DarkLogo = '/assets/logoDark.png'
+
   const mobileMenu = useRef(null)
   const [darkMode, toggleDarkMode] = useDarkMode()
 

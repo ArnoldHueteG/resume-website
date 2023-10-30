@@ -1,5 +1,5 @@
 import { IoLogoWhatsapp } from 'react-icons/io'
-import Logo from '../assets/LogoWhite.png'
+// import Logo from 'assets/LogoWhite.png'
 import { AiFillGithub } from 'react-icons/ai'
 import { AiFillLinkedin } from 'react-icons/ai'
 import { useState } from 'react'
@@ -58,6 +58,7 @@ function Footer() {
   navList[1].name = t('SkillsSection.menu');
   navList[2].name = t('RecentProjectsSection.menu');
   navList[3].name = t('AboutMeSection.menu');
+  const Logo = '/assets/LogoWhite.png'
 
   return (
     <footer className='bg-[#220F80] py-0'>

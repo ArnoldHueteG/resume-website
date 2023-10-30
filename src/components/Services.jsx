@@ -1,10 +1,14 @@
-import ServiceOne from './../assets/images.jpeg'
-import ServiceTwo from './../assets/service-2.png'
-import ServiceThree from './../assets/service-3.png'
+// import ServiceOne from 'assets/images.jpeg'
+// import ServiceTwo from 'assets/service-2.png'
+// import ServiceThree from 'assets/service-3.png'
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next';
 
 function Services() {
+  const ServiceOne = '/assets/images.jpeg'
+  const ServiceTwo = '/assets/service-2.png'
+  const ServiceThree = '/assets/service-3.png'
+
   const [serviceList, setserviceList] = useState([
     {
       title: 'Data Solutions',
