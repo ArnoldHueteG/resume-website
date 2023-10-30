@@ -1,17 +1,21 @@
 {
-    "languageList": ["Espanhol", "Inglês", "Português"],
-    "dropdownButton": {
-      "text": "PT"
-    },
-    "letsTalk": "Vamos conversar!",
-    "Services": "Serviços",
-    "Projects": "Projetos",
-    "Skills": "Habilidades",
-    "heroSection": {
-      "hello": "Hola",
-      "title": "Soy Arnold,",
-      "subtitle": "Software Engineer",
-      "description": "Cuento con experiencia en la optimización de soluciones en la nube, construyendo desde el Análisis de Negocios hasta soluciones digitales integrales entre datos y backend. Diseño soluciones sólidas que potencian la eficiencia y la innovación.",
-      "button": "Conversemos"
-    }
+  "languageList": [
+    "Espanhol",
+    "Inglês",
+    "Português"
+  ],
+  "dropdownButton": {
+    "text": "PT"
+  },
+  "letsTalk": "Vamos conversar!",
+  "Services": "Serviços",
+  "Projects": "Projetos",
+  "Skills": "Habilidades",
+  "heroSection": {
+    "hello": "Hola",
+    "title": "Soy Arnold,",
+    "subtitle": "Software Engineer",
+    "description": "Cuento con experiencia en la optimización de soluciones en la nube, construyendo desde el Análisis de Negocios hasta soluciones digitales integrales entre datos y backend. Diseño soluciones sólidas que potencian la eficiencia y la innovación.",
+    "button": "Conversemos"
   }
+}

@@ -34,32 +34,32 @@
   ],
   "ServiceSection": {
     "title": "My Services",
-    "subtitle" : "Discover how my services can boost your success in \n the digital world."
+    "subtitle": "Discover how my services can boost your success in \n the digital world."
   },
   "SkillsSection": {
     "title": "Applied Skills",
-    "subtitle" : "I handle and keep myself updated with cutting-edge technologies \n to provide the best service."
+    "subtitle": "I handle and keep myself updated with cutting-edge technologies \n to provide the best service."
   },
-  "MarqueeOne" : {
-    "question" : "Looking for a consultation?",
-    "buttonText" : "Let's talk!"
+  "MarqueeOne": {
+    "question": "Looking for a consultation?",
+    "buttonText": "Let's talk!"
   },
-  "RecentProjectsSection" : {
-    "title" : "Recent Projects",
-    "subtitle" : "Discover my latest projects and how I can help you.",
-    "buttonText" : "Let's talk!",
-    "projectList" : [
+  "RecentProjectsSection": {
+    "title": "Recent Projects",
+    "subtitle": "Discover my latest projects and how I can help you.",
+    "buttonText": "Let's talk!",
+    "projectList": [
       {
-        "title" : "Developing an Integrated Data Platform for a Restaurant Chain Using Multiple SaaS Tools",
-        "description" : "This project focused on creating an advanced, integrated data platform for a well-known restaurant chain, leveraging a suite of SaaS platforms. Each platform provided unique data streams, ranging from accounting and inventory (R365), point-of-sale operations (Toast), HR and payroll management (Paycom), to workforce planning (Harri), customer feedback (Tattle), and online engagement (Yext). \n\nThe challenge lay in amalgamating data from these varied sources into a cohesive, accessible system, overcoming the limitations of isolated data silos. The resulting platform transformed the restaurant's approach to data, enabling comprehensive, data-driven decision-making across all aspects of operations. This strategic integration allowed for enhanced operational efficiency, improved customer satisfaction, and fostered growth in a competitive marketplace."
+        "title": "Developing an Integrated Data Platform for a Restaurant Chain Using Multiple SaaS Tools",
+        "description": "This project focused on creating an advanced, integrated data platform for a well-known restaurant chain, leveraging a suite of SaaS platforms. Each platform provided unique data streams, ranging from accounting and inventory (R365), point-of-sale operations (Toast), HR and payroll management (Paycom), to workforce planning (Harri), customer feedback (Tattle), and online engagement (Yext). \n\nThe challenge lay in amalgamating data from these varied sources into a cohesive, accessible system, overcoming the limitations of isolated data silos. The resulting platform transformed the restaurant's approach to data, enabling comprehensive, data-driven decision-making across all aspects of operations. This strategic integration allowed for enhanced operational efficiency, improved customer satisfaction, and fostered growth in a competitive marketplace."
       },
       {
-        "title" : "Enhancing Data Integrity for 200M Streaming Service Users via Braze's API",
-        "description" : "This project targeted the critical task of elevating data quality for a streaming service with a massive user base of 200 million. The primary focus was on identifying and eliminating duplicate records, thereby refining the overall data quality.\n\nLeveraging Braze's API, we utilized Dataflow for extensive data transformations, Snowflake for secure storage, and Looker for insightful visualization. This strategic approach significantly improved data accuracy and processing efficiency, ensuring more reliable insights for our vast and diverse user base."
+        "title": "Enhancing Data Integrity for 200M Streaming Service Users via Braze's API",
+        "description": "This project targeted the critical task of elevating data quality for a streaming service with a massive user base of 200 million. The primary focus was on identifying and eliminating duplicate records, thereby refining the overall data quality.\n\nLeveraging Braze's API, we utilized Dataflow for extensive data transformations, Snowflake for secure storage, and Looker for insightful visualization. This strategic approach significantly improved data accuracy and processing efficiency, ensuring more reliable insights for our vast and diverse user base."
       },
       {
-        "title" : "Revolutionizing Data Ingestion in Insurance Company: Faster, Cheaper, Better",
-        "description" : "This project significantly transformed the data ingestion process for 15 databases in the insurance industry. Initially, the setup involved 6 DMS instances and several Glue PySpark jobs, incurring substantial costs of $7.8k and $5k monthly, respectively, and a processing time exceeding 4 hours.\n\nThe overhaul introduced a streamlined approach with just one Attunity instance and a single Redshift instance. This shift brought the monthly costs down to $2.5k for Attunity and $2k for Redshift. Impressively, this change represented a cost reduction of approximately 68%, alongside a dramatic decrease in processing time to less than an hour. This strategic move not only slashed expenses but also significantly accelerated the data processing efficiency, marking a major advancement in the company's operational capabilities."
+        "title": "Revolutionizing Data Ingestion in Insurance Company: Faster, Cheaper, Better",
+        "description": "This project significantly transformed the data ingestion process for 15 databases in the insurance industry. Initially, the setup involved 6 DMS instances and several Glue PySpark jobs, incurring substantial costs of $7.8k and $5k monthly, respectively, and a processing time exceeding 4 hours.\n\nThe overhaul introduced a streamlined approach with just one Attunity instance and a single Redshift instance. This shift brought the monthly costs down to $2.5k for Attunity and $2k for Redshift. Impressively, this change represented a cost reduction of approximately 68%, alongside a dramatic decrease in processing time to less than an hour. This strategic move not only slashed expenses but also significantly accelerated the data processing efficiency, marking a major advancement in the company's operational capabilities."
       }
     ]
   }
