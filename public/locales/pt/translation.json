@@ -5,7 +5,8 @@
     "Português"
   ],
   "dropdownButton": {
-    "text": "PT"
+    "text": "PT",
+    "textMobile": "Português"
   },
   "letsTalk": "Vamos conversar!",
   "heroSection": {

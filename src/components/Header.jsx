@@ -16,10 +16,10 @@ import { useState } from 'react'
 import { useTranslation } from 'react-i18next';
 
 const navList = [
-  { 
-    name: 'Services', 
-    href: '#services', 
-    icon: AiOutlineStar 
+  {
+    name: 'Services',
+    href: '#services',
+    icon: AiOutlineStar
   },
   {
     name: 'Skills',
@@ -92,7 +92,6 @@ function LanguageDropDown() {
                 className='dark:bg-neutral hover:text-[#5E47D2] dark:hover:text-[#ab9df0] flex gap-3 items-center'
                 onClick={() => changeLanguage(i)}
               >
-                {/* <TfiWorld className='w-5 h-auto mr-2' /> */}
                 {e}
               </button>
             )
@@ -106,31 +105,52 @@ function LanguageDropDown() {
 const languageList = ['Español', 'Inglés', 'Portugues']
 
 function MobileLanguageDropDown() {
-  const [currentDropDown, setCurrentDropdown] = useState(languageList[0])
+  // const [currentDropDown, setCurrentDropdown] = useState(languageList[0])
   const [showDropdown, setShowDropdown] = useState(false)
+
+  const { t, i18n } = useTranslation();
+  const languageList2 = t('languageList', { returnObjects: true });
+  const dropdownButton = t('dropdownButton', { returnObjects: true });
+
+  const changeLanguage = (i) => {
+    console.log(dropdownButton.text);
+    if (i === 0) {
+      i18n.changeLanguage('es');
+    }
+    if (i === 1) {
+      i18n.changeLanguage('en');
+    }
+    if (i === 2) {
+      i18n.changeLanguage('pt');
+    }
+    // i18n.changeLanguage(lng);
+  };
+
   return (
     <div>
       <button
         className='border-b-2 inline-flex items-center gap-2 border-gray-300 px-4 py-4 w-full justify-between'
         onClick={() => setShowDropdown(!showDropdown)}
       >
-        {currentDropDown} <BsChevronDown />
+        {dropdownButton.textMobile} <BsChevronDown />
       </button>
       {showDropdown && (
         <div className='pl-7'>
-          {languageList
-            .filter((e) => e !== currentDropDown)
-            .map((e) => (
-              <>
+          {languageList2
+            // .filter((e) => e !== i18n.resolvedLanguage)
+            .map((e, i) => {
+              return (
+              // (e) => (
                 <button
                   // onClick={closeMenu}
+                  key={i}
                   className='border-b-2 inline-flex items-center gap-2 border-gray-300 px-4 py-4 w-full hover:text-[#5E47D2]'
-                  onClick={() => setCurrentDropdown(e)}
+                  // onClick={() => setCurrentDropdown(e)}
+                  onClick={() => changeLanguage(i)}
                 >
                   {e}
                 </button>
-              </>
-            ))}
+            )})}
         </div>
       )}
     </div>
@@ -186,7 +206,7 @@ export default function Header() {
       href: '#aboutme',
       icon: BsMap,
     }
-    
+
   ]);
   const letsTalk = t('letsTalk');
   navList[0].name = t('ServiceSection.menu');
@@ -214,7 +234,12 @@ export default function Header() {
               <a
                 href={e.href}
                 key={e.name}
-                onClick={closeMenu}
+                // onClick={closeMenu}
+                onClick={(event) => {
+                  event.preventDefault()
+                  scrollToElement(e.href.slice(1))
+                  closeMenu()
+                }}
                 className='border-b-2 inline-flex items-center gap-2 border-gray-300 px-4 py-4 w-full hover:text-[#5E47D2] dark:hover:text-[#9785f5]'
               >
                 <e.icon />
@@ -279,7 +304,7 @@ export default function Header() {
         <div className='gap-3 items-center md:flex hidden'>
           <ToggleMode />
           <LanguageDropDown />
-          <button 
+          <button
             className='border-2 px-4 py-2.5 rounded-full font-bold border-[#220F80] text-[#220F80] dark:border-gray-200 dark:text-gray-200 hover:scale-95'
             onClick={() => window.open('https://api.whatsapp.com/send/?phone=51942603349', '_blank')}
           >
