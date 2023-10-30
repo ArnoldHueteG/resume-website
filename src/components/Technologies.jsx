@@ -43,7 +43,7 @@ function Technologies() {
         <div className='flex flex-wrap gap-8 md:gap-8 w-full justify-center'>
           {technologies.map((tech) => (
             <div key={tech.name} className="flex flex-col items-center">
-              <img src={ "/src/" +tech.icon} alt={tech.name} title={tech.description} className="h-24 object-contain"/>
+              <img src={ "src/" +tech.icon} alt={tech.name} title={tech.description} className="h-24 object-contain"/>
               <p className='text-center font-semibold mt-2'>{tech.name}</p>
             </div>
           ))}
