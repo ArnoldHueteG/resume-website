@@ -11,6 +11,11 @@ function Services() {
 
   const [serviceList, setserviceList] = useState([
     {
+      title: 'Digital Product Development',
+      img: ServiceThree,
+      text: 'Transform your concepts into successful digital products with our cutting-edge development services, ensuring your innovation stands out.',
+    },
+    {
       title: 'Data Solutions',
       img: ServiceTwo,
       text: 'Build a comprehensive data platform tailored to your company\'s needs, empowering you to make informed, data-driven decisions.',
@@ -19,12 +24,7 @@ function Services() {
       title: 'Cloud Migration',
       img: ServiceOne,
       text: 'Seamlessly transition your infrastructure to the cloud with our dedicated migration services, designed for your convenience and security.',
-    },
-    {
-      title: 'Digital Product Development',
-      img: ServiceThree,
-      text: 'Transform your concepts into successful digital products with our cutting-edge development services, ensuring your innovation stands out.',
-    },
+    }
   ]
   )
   const { t, i18n } = useTranslation();

@@ -18,16 +18,16 @@
   },
   "ServiceList": [
     {
+      "title": "Desenvolvimento de Produtos Digitais",
+      "description": "Transforme seus conceitos em produtos digitais de sucesso com nossos serviços de desenvolvimento de ponta, garantindo que sua inovação se destaque."
+    },
+    {
       "title": "Soluções de Dados",
       "description": "Crie uma plataforma de dados integral adaptada às necessidades da sua empresa, que permite tomar decisões informadas e baseadas em dados."
     },
     {
       "title": "Migração para a nuvem",
       "description": "Realize uma transição suave da sua infraestrutura para a nuvem com nossos serviços dedicados de migração, desenhados para sua comodidade e segurança."
-    },
-    {
-      "title": "Desenvolvimento de Produtos Digitais",
-      "description": "Transforme seus conceitos em produtos digitais de sucesso com nossos serviços de desenvolvimento de ponta, garantindo que sua inovação se destaque."
     }
   ],
   "ServiceSection": {
