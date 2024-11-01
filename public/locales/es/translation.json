@@ -55,8 +55,8 @@
     "buttonText": "¡Hablemos!",
     "projectList": [
       {
-        "title": "Desarrollo de una Plataforma de Datos Integrada para una Cadena de Restaurantes Utilizando Múltiples Herramientas SaaS",
-        "description": "Este proyecto se centró en crear una plataforma de datos avanzada e integrada para una conocida cadena de restaurantes, aprovechando un conjunto de plataformas SaaS. Cada plataforma proporcionaba flujos de datos únicos, que iban desde contabilidad e inventario (R365), operaciones de punto de venta (Toast), gestión de RRHH y nóminas (Paycom), hasta planificación de la fuerza laboral (Harri), retroalimentación de clientes (Tattle) y compromiso en línea (Yext).\n\nEl desafío radicaba en amalgamar datos de estas fuentes variadas en un sistema cohesivo y accesible, superando las limitaciones de los silos de datos aislados. La plataforma resultante transformó el enfoque del restaurante hacia los datos, permitiendo una toma de decisiones integral basada en datos en todos los aspectos de las operaciones. Esta integración estratégica permitió una mayor eficiencia operativa, mejoró la satisfacción del cliente y fomentó el crecimiento en un mercado competitivo."
+        "title": "Chatbot IA para Asistencia a Empleados",
+        "description": "Este proyecto se centró en crear un chatbot impulsado por IA para ayudar a los empleados con preguntas sobre procedimientos, recetas y lineamientos de la empresa, utilizando LangChain, Flowise AI, OpenAI SDK, LangGraph, React y Next.js para una experiencia responsiva."
       },
       {
         "title": "Mejora de la Integridad de Datos para 200 Millones de Usuarios de un Servicio de Streaming a través de la API de Braze",

@@ -15,6 +15,9 @@ function Technologies() {
     { name: 'React', icon: 'assets/tech/react.png'},
     { name: 'Node.js', icon: 'assets/tech/node.png'},
     { name: 'Typescript', icon: 'assets/tech/typescript.png'},
+    { name: 'Docker', icon: 'assets/tech/docker.svg'},
+    { name: 'Next.js', icon: 'assets/tech/nextjs-icon.png'},
+    { name: 'Langchain', icon: 'assets/tech/langchain.jpg'}
     
   ];
   const { t, i18n } = useTranslation();

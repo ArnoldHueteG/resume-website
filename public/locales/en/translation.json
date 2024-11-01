@@ -55,8 +55,8 @@
     "buttonText": "Let's talk!",
     "projectList": [
       {
-        "title": "Developing an Integrated Data Platform for a Restaurant Chain Using Multiple SaaS Tools",
-        "description": "This project focused on creating an advanced, integrated data platform for a well-known restaurant chain, leveraging a suite of SaaS platforms. Each platform provided unique data streams, ranging from accounting and inventory (R365), point-of-sale operations (Toast), HR and payroll management (Paycom), to workforce planning (Harri), customer feedback (Tattle), and online engagement (Yext). \n\nThe challenge lay in amalgamating data from these varied sources into a cohesive, accessible system, overcoming the limitations of isolated data silos. The resulting platform transformed the restaurant's approach to data, enabling comprehensive, data-driven decision-making across all aspects of operations. This strategic integration allowed for enhanced operational efficiency, improved customer satisfaction, and fostered growth in a competitive marketplace."
+        "title": "AI-Powered Chatbot for Employee Assistance",
+        "description": "This project focused on creating an AI-powered chatbot to assist employees with questions on company procedures, recipes, and guidelines, leveraging LangChain, Flowise AI, OpenAI SDK, LangGraph, React, and Next.js for a responsive experience."
       },
       {
         "title": "Enhancing Data Integrity for 200M Streaming Service Users via Braze's API",
